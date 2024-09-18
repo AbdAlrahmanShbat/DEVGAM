@@ -17,9 +17,6 @@ tm * ti ;
 
 time (&tt);
 
-
-
-
 // using localtime 
 
 ti=localtime(&tt);
