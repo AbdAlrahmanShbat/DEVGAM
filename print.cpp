@@ -30,8 +30,9 @@ cout << "[" << formattedTime << "]" << customMessage << endl;
 int main()
 {
     /* when u use function u just call the name and the parameters ?>?????? */
-    //DONE?
-
+    //DONE? run the app ??
+    // I DID can u see the termina  run again ?????
+// i did
     printTimeWithMessage/* <- this is the name and this is the parameters -> */   ("your custom message goes here.");
     // try and run the code there is error , you check errors like this, from the terminal bellow, good// 
 
