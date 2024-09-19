@@ -2,29 +2,39 @@
  
 #include <ctime>
 
+#include <string>
+/* if you want make a function, how you would start ??? */
+
+
 using namespace std; 
 
-int main () {
-
-// declaring argument for the time 
+/* now it is not empty */
+void printTimeWithMessage(const string& customMessage) {
 
 time_t tt;
 
-// declaring varebuls to store return value of local time 
-tm * ti ;
+tm*ti;
 
-// appplying time 
+time(&tt);
 
-time (&tt);
+ti = localtime(&tt);
 
-// using localtime 
+string formattedTime = asctime(ti);
 
-ti=localtime(&tt);
+formattedTime.pop_back();
 
+cout << "[" << formattedTime << "]" << customMessage << endl;
 
-cout << "current day . date and time is " << asctime(ti); 
+} 
+/* ???? */
+int main()
+{
+    /* when u use function u just call the name and the parameters ?>?????? */
+    //DONE?
 
+    printTimeWithMessage/* <- this is the name and this is the parameters -> */   ("your custom message goes here.");
+    // try and run the code there is error , you check errors like this, from the terminal bellow, good// 
 
-return 0;
-
+     // where to write my msg ? in the display termenal after i run the code? u will see the msg bellow, but seems u have errors 
+    return 0;
 }
